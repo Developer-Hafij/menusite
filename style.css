@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fullwebsite{
+    max-width: 1024px;
+    height: auto;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+.mainMenu {
+	width: 100%;
+	background-color: #000;
+}
+.headerMenu {
+	list-style: none;
+    text-align: center;
+}
+.headerMenu li{
+    display: inline-block;
+}
+.headerMenu li a {
+	display: inline-block;
+	text-decoration: none;
+	color: #b7a6a2;
+	font-size: 20px;
+    padding: 24px 43px 22px 0;
+    transition: .7s;
+}
+.headerMenu li:hover > a{
+    color: #ffffff;
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+}
+.slider{
+        background-image: url(https://www.korvia.com/wp-content/uploads/2015/09/korvia-image-slider-friends-2.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 130px;
+}
+.sliderContant{
+        text-align: center;
+        margin: 27px;
+}
+.sliderContant h1 {
+        background-color: #ffff;
+        display: inline-block;
+        padding: 5px 18px;
+        font-size: 36px;
+        font-weight: 600;
+}
+.sliderContant h3{
+        background-color: #fff;
+        margin: 20px 0 0 0;
+        font-size: 18px;
+        font-weight: 400;
+}
+.sliderContant a{
+        display: inline-block;
+        background: black;
+        color: white;
+        text-decoration: none;
+        padding: 8px 10px;
+        margin: 28px;
+        transition: .7s;
+}
+.sliderContant a:hover{
+    background-color: #faaf5b;
+    color: black;
+    box-shadow: 5px 14px 74px 11px #faaf5b;
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+}
+.footermenu{
+    background: black;
+}
+.footermenu h5 {
+	color: white;
+	text-align: center;
+	padding-top: 16px;
+    font-size: 16px;
+}
+.iconMenu {
+    margin-top: 18px;
+    padding-bottom: 36px;
+}
+.iconMenu ul {
+	text-align: center;
+}
+.iconMenu ul li {
+	display: inline-block;
+	margin-left: -5px;
+}
+.iconMenu ul li a {
+    display: inline-block;
+    background: #5ea5fa;
+    color: #000;
+    margin-left: 3px;
+    margin-right: 12px;
+    font-size: 17px;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 1s;
+    }
+    
+.iconMenu ul li a:hover{
+    background-color: #faaf5b;
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+
+}
+
+/* dropdown menu start */
+
+.mainMenu .headerMenu li{
+    position: relative;
+}
+
+.mainMenu .headerMenu li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 300px;
+    background-color: #222222;
+    transition: .7s;
+}
+.headerMenu li ul li{
+    display: block;
+}
+.headerMenu li ul li a{
+    border-top: 2px solid #302F31;
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.headerMenu li ul li:first-child a{
+    border-top: 5px solid #4272d7;
+}
+.headerMenu li ul li:first-child a{
+    border-top: 5px solid #4272d7;
+}
+.headerMenu li ul li:hover > a{
+    background: #4272d7;
+}
+
+
+/* Submenu start */
+
+.mainMenu .headerMenu li ul li {
+    position: relative;
+
+}
+
+.mainMenu .headerMenu li ul li ul{
+    position: absolute;
+    left: 300px;
+    top: 0;
+    width: 300px;
+    background-color: #222222;
+    transition: .7s;
+}
+
+
+/* Hover part */
+
+.mainMenu .headerMenu li ul{
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.mainMenu .headerMenu li:hover > ul{
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+}
+/* .mainMenu .headerMenu li ul .sub ul{
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+    
+}
+.headerMenu li ul .sub:hover ul{
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+} */
